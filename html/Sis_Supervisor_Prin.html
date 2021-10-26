@@ -1,34 +1,44 @@
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <title alt="Sistema Supervisor Principal">Sistema Supervisor Principal</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 
 <body>
-    <header id="cabecera">
-        <nav class="">
-            <h2 class="texto-nav">SISTEMAS DE PEDIDOS</h2>
-            <figure class="my-auto"><img src="/img/icons/menu.svg" alt="menu" height="30px" class="menu-button">
-            </figure>
-            <!--<span class="d-flex justify-content-end">
-                    <button type="button">
+    <header id="cabecera" class="row">
+        <nav class="col-12">
+            <span class="nav-span1 col-9">
+                <h2 class="texto-nav">SISTEMAS DE PEDIDOS</h2>
+                <figure class="my-auto"><img src="/img/icons/menu.svg" alt="menu" height="30px" class="menu-button">
+                </figure>
+            </span>
+            <a href="Sis_Supervisor_Prin.html" class="home">
+                <img src="/img/icons/home.svg" alt="home" height="35px">
+            </a>
+            <span class="nav-span2">
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
                         <figure class="nav-figure"><img id="nav_user_img" src="/img/icons/man.png" alt="user">
                         </figure>
                         <p>USER</p>
                     </button>
-                </span>-->
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Ver Perfil</a></li>
+                        <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+                    </ul>
+                </div>
+            </span>
+            
         </nav>
     </header>
 
     <main id="contenedor-principal" class="d-flex row">
-        <aside id="menu" class="flex-fill col-2">
+        <aside class="flex-fill col-2 menu">
             <figure class="menu-figure"><img class="user-aside_img" src="/img/icons/man.png" alt="user-Aside"></figure>
             <h4 class="menu-text-user mr-2 my-2">USUARIO</h4>
             <h5 class="menu-cargo mr-2">SUPERVISOR</h5>
@@ -36,7 +46,7 @@
             <hr>
             <ul class="list-unstyled components">
                 <li>
-                    <a href="" class="d-block p-2 mr-2 lead" aria-hidden="true">INICIO</a>
+                    <a href="Sis_Supervisor_Prin.html" class="d-block p-2 mr-2 lead" aria-hidden="true">INICIO</a>
                 </li>
                 <li>
                     <a href="" class="d-block p-2 mr-2 lead" aria-hidden="true">CARGAR PEDIDO</a>
@@ -106,9 +116,7 @@
                 </div>
             </div>
 
-
-
-            <footer>
+            <footer class="col-12">
                 <div class="fondo-footer">
                     <h4 class="titulo-final">&copy; SISTEMA DE PEDIDOS 2021</h4>
                 </div>
@@ -116,10 +124,11 @@
         </section>
     </main>
 
-
-
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/popper.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.bundle.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

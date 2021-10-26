@@ -17,43 +17,111 @@ hr{
 }
 
 
-ul a{
-    text-decoration: none;
-    color: black;
-    font-size: 250%;
-    font-weight: bold;
-}
-
-ul a:hover{
-    color: var(--azul);
-}
-
 /** ESTILO SUPERVISOR **/
 
 #cabecera{
-    height: 10%;
     background-color: var(--azul);
+    height: 10%;
 }
 
 #cabecera nav{
+    padding-top: 8px;
     height: 100%;
     display: flex;
-    align-items: center;
+    padding-bottom: 8px;
 }
 
-#cabecera nav button{
+#cabecera nav .nav-span1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    overflow-y: hidden;
+    margin-right: 50px;
+}
+
+#cabecera nav .nav-span2{
+    height: 100%;
+    display: flex;
+}
+
+#cabecera nav .nav-span2 div{
+    height: 150px;
+    position: absolute;
+}
+
+#cabecera nav .nav-span2 div button{
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
 
-#cabecera nav button p{
+#cabecera nav .nav-span2 div ul{
+    width: 166px;  
+    background-color: var(--azul);
+    padding: 0;
+}
+
+#cabecera nav .nav-span2 div ul li a{
+    color: white;
+    text-align: center;
+}
+
+#cabecera nav .nav-span2 div ul li a:hover{
+    color: black;
+}
+
+#cabecera nav .home{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    overflow-y: hidden;
+    margin-right: 20px;
+}
+
+#cabecera nav .nav-span2 .nav-span2-button{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    overflow-y: hidden;
+    margin-left: 10px;
+}
+
+#cabecera nav .nav-span2 button p{
     margin-top: 20px;
     margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-figure{
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    border: 3px outset black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav_user_img{
+    border-radius: 100%;
+    background-color: rgb(228, 228, 228);
+    height: 25px;
 }
 
 .texto-nav{
     font-weight: bold;
     color: white;
+    margin-top: 9px;
+    margin-right: 10px;
+    margin-left: 50px;
 }
 
 
@@ -70,12 +138,21 @@ ul a:hover{
     font-weight: bold;
 }
 
-#menu{
+#contenedor-principal .menu{
     text-align: center; 
     padding: 0;
     background-color: var(--menu);
 }
 
+#contenedor-principal .menu ul a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+#contenedor-principal .menu ul a:hover{
+    color: var(--azul);
+}
 
 .menu-figure{
     margin-left: 62px;
@@ -182,23 +259,6 @@ ul a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.nav-figure{
-    margin: 0 auto;
-    width: 70px;
-    height: 70px;
-    border: 3px outset black;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#nav_user_img{
-    border-radius: 100%;
-    /*background-color: rgb(228, 228, 228);*/
-    height: 50px;
 }
 
 #user_img{
