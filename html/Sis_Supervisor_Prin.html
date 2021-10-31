@@ -8,22 +8,23 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body>
+<body id="body">
     <header id="cabecera" class="row">
         <nav class="col-12">
-            <span class="nav-span1 col-9">
-                <h2 class="texto-nav">SISTEMAS DE PEDIDOS</h2>
-                <figure class="my-auto"><img src="/img/icons/menu.svg" alt="menu" height="30px" class="menu-button">
+            <span class="nav-span1 col-4">
+                <h3 class="texto-nav" id="texto-nav" data-desktoptext="SISTEMA DE PEDIDOS" data-tablettext="SISTEMA DE PEDIDOS" data-phonetext="SP"></h3>
+                <figure class="nav-menu-button my-auto"><img onclick="menu()" id="btn_open" src="/img/icons/menu.svg" alt="menu" height="30px" class="menu-button">
                 </figure>
             </span>
-            <a href="Sis_Supervisor_Prin.html" class="home">
-                <img src="/img/icons/home.svg" alt="home" height="35px">
-            </a>
-            <span class="nav-span2">
+            <div class="col-1"></div>
+            <span class="nav-span2 col-7">
+                <a href="Sis_Supervisor_Prin.html" class="home">
+                    <img src="/img/icons/home.svg" alt="home" height="35px">
+                </a>
                 <div class="dropdown">
                     <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
                         data-bs-toggle="dropdown" aria-expanded="false">
-                        <figure class="nav-figure"><img id="nav_user_img" src="/img/icons/man.png" alt="user">
+                        <figure class="nav-figure"><img class="nav_user_img" src="/img/icons/man.png" alt="user">
                         </figure>
                         <p>USER</p>
                     </button>
@@ -33,51 +34,56 @@
                     </ul>
                 </div>
             </span>
-            
         </nav>
     </header>
-
-    <main id="contenedor-principal" class="d-flex row">
-        <aside class="flex-fill col-2 menu">
-            <figure class="menu-figure"><img class="user-aside_img" src="/img/icons/man.png" alt="user-Aside"></figure>
-            <h4 class="menu-text-user mr-2 my-2">USUARIO</h4>
-            <h5 class="menu-cargo mr-2">SUPERVISOR</h5>
-            <h6 class="menu-text-email mr-2"><a href="mailto:user@gmail.com">user@gmail.com</a></h6>
+    <aside class=" menu" id="menu_side">
+        <div class=" menu-div" id="menu-div">
+            <figure class="menu-figure mx-auto"><img class="user-aside_img" src="/img/icons/man.png" alt="user-Aside"></figure>
+            <div id="menu_info">
+                <h4 class="menu-text-user my-2" value="USUARIO"></h4>
+                <h5 class="menu-cargo my-2" value="SUPERVISOR"></h5>
+                <h6 class="menu-text-email my-2" ><a class="menu-text-email-a" value="user@gmail.com" href="mailto:user@gmail.com"></a></h6>
+            </div>
             <hr>
-            <ul class="list-unstyled components">
-                <li>
-                    <a href="Sis_Supervisor_Prin.html" class="d-block p-2 mr-2 lead" aria-hidden="true">INICIO</a>
+            <ul class="list-unstyled components menu-ul">
+                <li class="menu-li" >
+                    <img src="/img/icons/home-menu.svg" alt="home" height="30px">
+                    <a href="Sis_Supervisor_Prin.html" class="d-block menu-a" id="menu-a" aria-hidden="true" value="INICIO"></a>
                 </li>
-                <li>
-                    <a href="" class="d-block p-2 mr-2 lead" aria-hidden="true">CARGAR PEDIDO</a>
+                <li class="menu-li">
+                    <img src="/img/icons/subir.svg" alt="home" height="30px">
+                    <a href="" class="d-block menu-a" id="menu-a" aria-hidden="true" value="CARGAR PEDIDO"></a>
                 </li>
-                <li>
-                    <a href="" class="d-block p-2 mr-2 lead" aria-hidden="true">GESTIONAR PEDIDOS</a>
+                <li class="menu-li">
+                    <img src="/img/icons/orden.svg" alt="home" height="35px">
+                    <a href="" class="d-block menu-a" id="menu-a" aria-hidden="true" value="GESTIONAR PEDIDOS"></a>
                 </li>
-                <li>
-                    <a href="" class="d-block p-2 mr-2 lead" aria-hidden="true">CONSULTAR PEDIDOS</a>
+                <li class="menu-li">
+                    <img src="/img/icons/consulta.svg" alt="home" height="30px">
+                    <a href="" class="d-block menu-a" id="menu-a" aria-hidden="true" value="CONSULTAR PEDIDOS"></a>
                 </li>
-                <li>
-                    <a href="" class="d-block lead" aria-hidden="true">DESCARGAR REPORTES</a>
+                <li class="menu-li">
+                    <img src="/img/icons/flecha-hacia-abajo.svg" alt="home" height="30px">
+                    <a href="" class="d-block menu-a" id="menu-a" aria-hidden="true" value="DESCARGAR REPORTES"></a>
                 </li>
             </ul>
-        </aside>
+        </div>
+    </aside>
 
-        <section id="contenedor" class="flex-fill col-10">
+    <main id="contenedor-principal" class="contenedor-principal"> 
+        
+        <section id="contenedor" class="row">
             <div id="contenedor-div">
-                <span>
-                    <h2>INICIO</h2>
-                </span>
+                <h2 class="">INICIO</h2>
                 <hr>
-                <section class="d-flex">
-                    <span>
-                        <figure class="contenedor-figure"><img id="user_img" src="/img/icons/man.png" alt="user">
-                        </figure>
-                    </span>
+                <section class="contenedor-div-section">
+                    <div class="contenedor-figure">
+                        <img id="user_img" src="/img/icons/man.png" alt="user">
+                    </div>
                     <div class="div-info">
-                        <h1 class="mt-3">SUPERVISOR</h1>
-                        <h3 class="mt-5">YONER ARBEY SILVA LEAL</h3>
-                        <h5 class="mt-5"><a href="mailto: yonerarbeysl@ufps.eduo.co">YONERARBEYSL@UFPS.EDU.CO</a></h3>
+                        <h1 class="">SUPERVISOR</h1>
+                        <h3 class="">YONER ARBEY SILVA LEAL</h3>
+                        <h5 class=""><a href="mailto: yonerarbeysl@ufps.eduo.co">YONERARBEYSL@UFPS.EDU.CO</a></h3>
                     </div>
                 </section>
                 <hr>
@@ -93,7 +99,7 @@
                     <button type="button" class="fig-button">
                         <div>
                             <p>GESTIONAR <br>PEDIDOS</p>
-                            <i><img src="/img/icons/orden.svg" alt="SUBIR" height="50px"></i>
+                            <i><img class="ordenar-img" src="/img/icons/orden.svg" alt="SUBIR" height="50px"></i>
                         </div>
                         <figure class="fig-button-triangulo"></figure>
                     </button>
@@ -115,11 +121,8 @@
                     </button>
                 </div>
             </div>
-
-            <footer class="col-12">
-                <div class="fondo-footer">
-                    <h4 class="titulo-final">&copy; SISTEMA DE PEDIDOS 2021</h4>
-                </div>
+            <footer class="">
+                <h4 class="titulo-final ">&copy; SISTEMA DE PEDIDOS 2021</h4>
             </footer>
         </section>
     </main>
@@ -129,6 +132,7 @@
     <script type="text/javascript" src="/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/js/bootstrap.bundle.js"></script>
     <script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="/js/funciones.js"></script>
 </body>
 
 </html>
