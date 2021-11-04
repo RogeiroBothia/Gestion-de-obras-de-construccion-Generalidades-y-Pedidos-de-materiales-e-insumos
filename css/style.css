@@ -12,7 +12,9 @@
 }
 
 body{
-    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 hr{
@@ -136,7 +138,7 @@ hr{
     background-color: var(--menu);
     padding-top: 75px;
     width: 20%;
-    position: fixed;
+    position: absolute;
     z-index: 100;
     box-sizing: border-box;
     top: 0;
@@ -144,7 +146,7 @@ hr{
 }
 .menu-active {
     min-width: 5% !important;
-    width: 5% !important
+    width: 5% !important;
 }
 
 .menu-div{
@@ -271,8 +273,9 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 75px;
+    padding-top: 95px;
     margin-left: 20%;
+    min-height: 100vh;
 }
 
 .contenedor-principal-active {
@@ -286,12 +289,14 @@ hr{
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
+
 
 #contenedor-div{
     width: 80%;
     padding: 0;
-    height: 90% !important;
 }
 
 .contenedor-div-section{
@@ -312,7 +317,6 @@ hr{
 #contenedor-div h2{
     font-weight: bold;
     margin: 0;
-    padding-top: 20px;
 }
 
 #contenedor-div .div-info{
@@ -348,7 +352,7 @@ hr{
 #botoncillos .fig-button div{
     display: flex;
     position: absolute;
-    z-index: 200;
+    z-index: 100;
     justify-content: center;
     align-items: center;
     padding: 25px;
@@ -385,8 +389,17 @@ hr{
 }
 
 footer{
-    width: 100%;
+    width: 80%;
     padding: 0 !important;
+    position: relative;
+    bottom: 0;
+    z-index: 100;
+    margin-left: 20%;
+}
+
+.footer_active{
+    width: 95% !important;
+    margin-left: 5% !important;
 }
 
 
@@ -406,14 +419,11 @@ footer .titulo-final{
 
 /*Clases para usar en JavaScript*/
 
-.cabecera_move{
-    right: 0px;
-}
 
-.texto-nav_move:before {
-    content: attr(data-phonetext);
-    font-size: 1.75rem;
-    width: 20px;
+.texto-nav_move:before{
+    content: attr(data-phonetext) !important;
+    font-size: 1.5rem !important;
+    width: 20px !important;
 }
 
 @media (max-width:1150px) {
@@ -474,6 +484,8 @@ footer .titulo-final{
         font-size: 1rem;
         width: 80px;
     }
+
+    
 }
 
 @media (max-width:950px){
@@ -504,6 +516,11 @@ footer .titulo-final{
 
     #botoncillos .fig-button div i .ordenar-img{
         height: 35px !important;
+    }
+
+    footer .titulo-final{
+        height: 40px !important;
+        font-size: 1.3rem !important;
     }
 }
 
@@ -588,6 +605,11 @@ footer .titulo-final{
         width: 70px;
     }
 
+
+    footer .titulo-final{
+        height: 30px !important;
+        font-size: 1rem !important;
+    }
 }
 
 @media (max-width:600px){
@@ -673,6 +695,10 @@ footer .titulo-final{
         opacity: 0;
     }
 
+    footer{
+        left: 15% !important;
+        width: 85% !important;
+    }
 }
 
 
