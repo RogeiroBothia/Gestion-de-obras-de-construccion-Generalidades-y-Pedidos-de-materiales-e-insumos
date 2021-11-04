@@ -38,7 +38,7 @@
     </header>
     <aside class=" menu" id="menu_side">
         <div class=" menu-div" id="menu-div">
-            <figure class="menu-figure mx-auto"><img class="user-aside_img" src="/img/icons/man.png" alt="user-Aside"></figure>
+            <figure class="menu-figure mx-auto" id="menu-figure"><img class="user-aside_img" src="/img/icons/man.png" alt="user-Aside"></figure>
             <div id="menu_info">
                 <h4 class="menu-text-user my-2" value="USUARIO"></h4>
                 <h5 class="menu-cargo my-2" value="SUPERVISOR"></h5>
@@ -72,15 +72,17 @@
 
     <main id="contenedor-principal" class="contenedor-principal"> 
         
-        <section id="contenedor" class="row">
+        <section id="contenedor">
             <div id="contenedor-div">
                 <h2 class="">INICIO</h2>
                 <hr>
                 <section class="contenedor-div-section">
-                    <div class="contenedor-figure">
-                        <img id="user_img" src="/img/icons/man.png" alt="user">
+                    <div class="col-6">
+                        <figure class="contenedor-figure">
+                            <img id="user_img" src="/img/icons/man.png" alt="user">
+                        </figure>
                     </div>
-                    <div class="div-info">
+                    <div class="div-info col-6">
                         <h1 class="">SUPERVISOR</h1>
                         <h3 class="">YONER ARBEY SILVA LEAL</h3>
                         <h5 class=""><a href="mailto: yonerarbeysl@ufps.eduo.co">YONERARBEYSL@UFPS.EDU.CO</a></h3>
@@ -121,12 +123,12 @@
                     </button>
                 </div>
             </div>
-            <footer class="">
-                <h4 class="titulo-final ">&copy; SISTEMA DE PEDIDOS 2021</h4>
-            </footer>
+            
         </section>
     </main>
-
+    <footer id="footer" class="">
+        <h4 class="titulo-final ">&copy; SISTEMA DE PEDIDOS 2021</h4>
+    </footer>
     <script type="text/javascript" src="/js/popper.min.js"></script>
     <script type="text/javascript" src="/js/jquery.js"></script>
     <script type="text/javascript" src="/js/bootstrap.min.js"></script>
