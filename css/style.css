@@ -177,12 +177,12 @@ hr{
     text-align: center;
     text-decoration: none;
     color: black;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     font-weight: bolder;
     margin-left: 5px;
     visibility: visible;
     opacity: 1;
-    width: 185px;
+    width: 150px;
 }
 
 .menu-a:before{
@@ -499,11 +499,6 @@ footer .titulo-final{
         font-weight: bolder;
     }
     .menu-text-email{font-size: 0.8rem;}
-
-    .menu-a{
-        font-size: 0.8rem;
-        width: 70px;
-    }
     
 }
 
