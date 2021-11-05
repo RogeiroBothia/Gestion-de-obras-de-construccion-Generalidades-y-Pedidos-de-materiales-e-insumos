@@ -15,7 +15,6 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    overflow-y: hidden;
     position: relative;
 }
 
@@ -136,7 +135,7 @@ hr{
 
 .menu{
     padding: 0;
-    min-height: 100vh;
+    min-height: calc(100vh - 73px);
     background-color: var(--menu);
     width: 20%;
     position: absolute;
@@ -164,7 +163,7 @@ hr{
 }
 
 .menu-li{
-    padding-bottom: 18.4px;
+    padding-bottom: 13px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -214,8 +213,8 @@ hr{
 }
 
 .menu-figure{
-    width: 105px;
-    height: 105px;
+    width: 85px;
+    height: 85px;
     border: 3px outset black;
     border-radius: 100%;
     display: flex;
@@ -237,6 +236,7 @@ hr{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin: 0;
 }
 
 .menu-cargo{
@@ -245,6 +245,7 @@ hr{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin: 0;
 }
 
 .menu-text-email{
@@ -254,13 +255,14 @@ hr{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin: 0;
 }
 
 
 .user-aside_img{
     border-radius: 100%;
     background-color: rgb(228, 228, 228);
-    height: 90px;
+    height: 70px;
 }
 
 .user-aside_img-active{
@@ -327,6 +329,7 @@ hr{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: center;
 }
 
 #contenedor-div .div-info h1{
@@ -436,7 +439,7 @@ footer .titulo-final{
     width: 20px !important;
 }
 
-@media (max-width:1150px) {
+@media (max-width:1500px) {
     /*NAV*/
     .texto-nav:before {
         content: attr(data-tablettext);
@@ -489,16 +492,37 @@ footer .titulo-final{
         height: 150px !important;
         width: 150px !important;
     }
-    
-    .menu-a{
-        font-size: 1rem;
-        width: 80px;
-    }
 
+    .menu-cargo{font-size: 0.9rem;}
+    .menu-text-user{
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+    .menu-text-email{font-size: 0.8rem;}
+
+    .menu-a{
+        font-size: 0.8rem;
+        width: 70px;
+    }
     
 }
 
 @media (max-width:950px){
+    #contenedor-div .div-info h1{
+        font-weight: bold;
+        font-size: 2rem
+    }
+
+    #contenedor-div .div-info h3{
+        font-weight: bold;
+        font-size: 1rem
+    }
+
+    #contenedor-div .div-info h5{
+        font-weight: bold;
+        font-size: 0.9rem
+    }
+
     #botoncillos{
         display: grid !important;
         grid-template-columns: 1fr 1fr;
@@ -543,17 +567,17 @@ footer .titulo-final{
 
     #contenedor-div .div-info h1{
         font-weight: bold;
-        font-size: 2.2rem
+        font-size: 1.9rem
     }
 
     #contenedor-div .div-info h3{
         font-weight: bold;
-        font-size: 1.2rem
+        font-size: 0.9rem
     }
 
     #contenedor-div .div-info h5{
         font-weight: bold;
-        font-size: 0.9rem
+        font-size: 0.8rem
     }
 
     #botoncillos .fig-button{
@@ -581,13 +605,13 @@ footer .titulo-final{
     }
 
     .contenedor-figure{
-        width: 150px !important;
-        height: 150px !important;
+        width: 130px !important;
+        height: 130px !important;
     }
 
     .contenedor-figure #user_img{
-        height: 130px !important;
-        width: 130px !important;
+        height: 110px !important;
+        width: 110px !important;
     }
 
     .menu-figure{
