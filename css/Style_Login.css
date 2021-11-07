@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --gris-padre: #E3E3E3;
+    --gris-hijo: #D4D4D4;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.contenedor-principal{
+    background-color: var(--gris-padre);
+    width: 60vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+    border-radius: 3%;
+    padding: 60px 20px 60px 20px;
+}
+
+.contenedor-principal h3{
+    font-weight: bold;
+    margin: 0;
+}
+
+.contenedor-principal .formulario{
+    background-color: var(--gris-hijo);
+    margin-top: 50px;
+    height: auto;
+    width: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 3%;
+    justify-content: center;
+}
+
+.contenedor-principal .formulario button{
+    width: 70%;
+    background-color: #00A8CD;
+    border: 2px solid black;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contenedor-principal .formulario div{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contenedor-principal .formulario div label{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.contenedor-principal .formulario div div{
+    border: 3px solid black;
+    border-radius: 4%;
+    width: 80%;
+}
+
+.contenedor-principal .formulario div a{
+    text-decoration-line: none;
+}
+
+
+
+@media (max-width: 1000px){
+    .contenedor-principal{
+        
+    }
+}
