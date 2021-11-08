@@ -28,9 +28,16 @@
                         </figure>
                         <p>USER</p>
                     </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Ver Perfil</a></li>
-                        <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+                    <ul class="dropdown-menu contenedor-ul" aria-labelledby="dropdownMenuButton1">
+                        <li id="sub-dropdown" class="dropdown">
+                            <a href="#" class="dropdown-item">Cambiar Rol</a>
+                            <ul id="sub-dropdown-menu" class="dropdown-menu">
+                                <li class=""><a href="../html/Sis_Administrador_Prin.html" class="dropdown-item">ADMINISTRADOR</a></li>
+                                <li class=""><a href="../html/Sis_Supervisor_Prin.html" class="dropdown-item">SUPERVISOR</a></li>
+                                <li class=""><a href="../html/Sis_Interventor_Prin.html" class="dropdown-item">INTERVENTOR</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item" href="../index.html">Cerrar Sesión</a></li>
                     </ul>
                 </div>
             </span>
@@ -125,7 +132,7 @@
     <script type="text/javascript" src="/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/js/bootstrap.bundle.js"></script>
     <script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="/js/funciones.js"></script>
+    <script type="text/javascript" src="/js/menu.js"></script>
 </body>
 
 </html>
