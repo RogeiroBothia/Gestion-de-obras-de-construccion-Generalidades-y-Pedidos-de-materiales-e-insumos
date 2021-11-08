@@ -63,22 +63,57 @@ hr{
     justify-content: center;
     padding-top: 1px;
     padding-bottom: 1px;
+    box-shadow: none !important;
 }
 
-#cabecera nav .nav-span2 div ul{
+#cabecera nav .nav-span2 div .contenedor-ul{
     width: 166px;  
     background-color: var(--azul);
     padding: 0;
+    transform: translate(1px, 63px) !important;
+    border-radius: 0 !important;
 }
 
-#cabecera nav .nav-span2 div ul li a{
+#cabecera nav .nav-span2 div .contenedor-ul a{
     color: white;
     text-align: center;
+    font-size: small;
 }
 
-#cabecera nav .nav-span2 div ul li a:hover{
+#cabecera nav .nav-span2 div .contenedor-ul a:hover{
     color: black;
 }
+
+#sub-dropdown-menu{
+    position: absolute;
+    background-color: rgb(0, 168, 205);
+    right: 164px;
+    margin-top: -28px;
+    padding: 0 !important;
+    z-index: 100;
+    transform: translate(1px, 0px) !important;
+    border-radius: 0 !important;
+}
+#sub-dropdown-menu .li-active{
+    background-color: #E5E5E5;
+}
+
+#sub-dropdown-menu .li-active a{
+    color: black !important;
+}
+#sub-dropdown-menu li:hover{background-color: white;}
+#sub-dropdown-menu li{text-align: center;}
+#sub-dropdown-menu li a{
+    text-decoration: none;
+    padding: .25rem 1rem;
+}
+
+.contenedor-ul .dropdown:hover .dropdown-menu{
+    display: block;
+    transition: all 0.5s ease-in-out;
+}
+
+#sub-dropdown:hover #sub-drop-menu{display: block !important;}
 
 #cabecera nav .home{
     display: flex;
@@ -135,13 +170,13 @@ hr{
 
 .menu{
     padding: 0;
-    min-height: calc(100vh - 73px);
+    min-height: calc(100vh - 65px);
     background-color: var(--menu);
     width: 20%;
     position: absolute;
     z-index: 100;
     box-sizing: border-box;
-    top: 69px;
+    top: 64px;
     left: 0;
 }
 

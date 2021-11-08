@@ -1,3 +1,17 @@
+let cargo = document.querySelector(".menu-cargo").getAttribute("value");
+let li_roles = document.getElementById("sub-dropdown-menu").childNodes;
+switch (cargo) {
+    case "ADMINISTRADOR":
+        li_roles[1].classList.add("li-active");
+        break;
+    case "SUPERVISOR":
+        li_roles[3].classList.add("li-active");
+        break;
+    case "INTERVENTOR":
+        li_roles[5].classList.add("li-active");
+        break;
+}
+
 var menuCerrado = false;
 var tamañoPage = 0;
 
