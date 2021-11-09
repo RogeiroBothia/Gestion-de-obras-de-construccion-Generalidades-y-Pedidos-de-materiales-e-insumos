@@ -61,20 +61,18 @@ function menu() {
             }
         }
 
-        let name_doc = document.title;
-
-        switch (name_doc) {
-            case "Sistema Supervisor Principal":
+        switch (cargo) {
+            case "SUPERVISOR":
                 if (menu_info.innerHTML === "") {
                     menu_info.innerHTML = '<h4 class="menu-text-user my-2">USUARIO</h4><h5 class="menu-cargo my-2">SUPERVISOR</h5><h6 class="menu-text-email my-2"><a href="mailto:user@gmail.com">user@gmail.com</a></h6>';
                 } else { menu_info.innerHTML = "" }
                 break;
-            case "Sistema Interventor Principal":
+            case "INTERVERTOR":
                 if (menu_info.innerHTML === "") {
                     menu_info.innerHTML = '<h4 class="menu-text-user my-2">USUARIO</h4><h5 class="menu-cargo my-2">INTERVENTOR</h5><h6 class="menu-text-email my-2"><a href="mailto:user@gmail.com">user@gmail.com</a></h6>';
                 } else { menu_info.innerHTML = "" }
                 break;
-            case "Sistema Administrador Principal":
+            case "ADMINISTRADOR":
                 if (menu_info.innerHTML === "") {
                     menu_info.innerHTML = '<h4 class="menu-text-user my-2">USUARIO</h4><h5 class="menu-cargo my-2">ADMINISTRADOR</h5><h6 class="menu-text-email my-2"><a href="mailto:user@gmail.com">user@gmail.com</a></h6>';
                 } else { menu_info.innerHTML = "" }

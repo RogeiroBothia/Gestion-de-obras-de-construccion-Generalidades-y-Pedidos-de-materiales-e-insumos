@@ -3,9 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <title alt="Sistema Administrador Principal">Sistema Administrador Principal</title>
+    <title alt="Sistema Administrador Zona">Sistema Administrador Zona</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/Style_Sis_Administrador_Prin.css">
+    <link rel="stylesheet" href="/css/Style_Sis_Administrador_Are.css">
+
+    <!-- CSS Tabla -->
+    <link rel="stylesheet" href="/css/bootstrap.table.css">
+    <!-- CSS Tabla -->
+
 </head>
 
 <body id="body">
@@ -79,71 +84,67 @@
         </div>
     </aside>
 
-    <main id="contenedor-principal" class="contenedor-principal"> 
-        
+    <main id="contenedor-principal" class="contenedor-principal">
         <section id="contenedor">
             <div id="contenedor-div">
-                <h2 class="">INICIO</h2>
-                <hr>
-                <section class="contenedor-div-section" id="contenedor-div-section">
-                    <div class="div-figure">
-                        <figure class="contenedor-figure">
-                            <img id="user_img" src="/img/icons/man.png" alt="user">
-                        </figure>
-                    </div>
-                    <div class="div-info">
-                        <h1 class="">ADMINISTRADOR</h1>
-                        <h3 class="">YONER ARBEY SILVA LEAL</h3>
-                        <h5 class=""><a href="mailto: yonerarbeysl@ufps.eduo.co">YONERARBEYSL@UFPS.EDU.CO</a></h3>
-                    </div>
-                </section>
-                <hr>
-                <div id="botoncillos">
-                
-                    <button type="button" class="fig-button">
-                        <div>
-                            <p>ADMIN<br>ÁREAS</p>
-                            <i><img class="ordenar-img" src="/img/icons/area-administrar.svg" alt="ADMINISTRAR AREAS" height="40px"></i>
-                        </div>
-                        <figure class="fig-button-triangulo"></figure>
-                    </button>
+                <h2 class="">Zona</h2>
+            <hr>
+            <table id="example" class="table table-striped" style="width: 100%;">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Descripcion</th>
+                        <th>Ubicacion</th>
+                        <th>Opciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Coliseo</td>
+                        <td>**************</td>
+                        <td>UFPS</td>
+                        <td><button type="button" class="btn btn-light" onclick="location.href='/html/Sis_Supervisor_Pedido.html'">Acciones</button></td>
+                    </tr>
+                    <tr>
+                        <td>Coliseo</td>
+                        <td>**************</td>
+                        <td>UFPS</td>
+                        <td><button type="button" class="btn btn-light" onclick="location.href='/html/Sis_Supervisor_Pedido.html'">Acciones</button></td>
+                    </tr>
+                    <tr>
+                        <td>Coliseo</td>
+                        <td>**************</td>
+                        <td>UFPS</td>
+                        <td><button type="button" class="btn btn-light" onclick="location.href='/html/Sis_Supervisor_Pedido.html'">Acciones</button></td>
+                    </tr>
+                </tbody>
 
-                    <button type="button" class="fig-button">
-                        <div>
-                            <p>ADMIN<br>ZONAS</p>
-                            <i><img src="/img/icons/zone-admin.svg" alt="ADMINISTRAR ZONAS" height="40px"></i>
-                        </div>
-                        <figure class="fig-button-triangulo"></figure>
-                    </button>
-
-                    <button type="button" class="fig-button">
-                        <div>
-                            <p>GESTIONAR<br>REGISTROS</p>
-                            <i><img src="/img/icons/add-user.svg" alt="GESTIONAR REGISTROS DE USUARIO" height="40px"></i>
-                        </div>
-                        <figure class="fig-button-triangulo"></figure>
-                    </button>
-                    <button type="button" class="fig-button">
-                        <div>
-                            <p>GESTIONAR<br>USUARIOS</p>
-                            <i><img src="/img/icons/gestion-user.svg" alt="GESTIONAR USUARIOS" height="40px"></i>
-                        </div>
-                        <figure class="fig-button-triangulo"></figure>
-                    </button>
-                </div>
+                </table>
             </div>
-            
         </section>
     </main>
+
     <footer id="footer">
         <h4 class="titulo-final ">&copy; SISTEMA DE PEDIDOS 2021</h4>
     </footer>
+
+
     <script type="text/javascript" src="/js/popper.min.js"></script>
     <script type="text/javascript" src="/js/jquery.js"></script>
     <script type="text/javascript" src="/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/js/bootstrap.bundle.js"></script>
     <script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="/js/menu.js"></script>
+
+    <!-- JS Tabla -->
+    <script type="text/javascript" src="/js/jquery.datatable.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.table.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#example').DataTable();
+        });
+    </script>
+    <!-- JS Tabla -->
 </body>
 
 </html>
