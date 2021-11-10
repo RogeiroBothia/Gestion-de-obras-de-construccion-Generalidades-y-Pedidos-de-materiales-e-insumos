@@ -4,35 +4,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title alt="Iniciar Sesión">Iniciar Sesión</title>
+  <title alt="Iniciar Sesión">Recuperar Contraseña</title>
   <link rel="stylesheet" href="/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/Style_Login.css">
+  <link rel="stylesheet" href="/css/Style_Olvide_Contra.css">
+
 </head>
 
 <body>
   <section class="contenedor-principal">
-    <h3>LOGIN</h3>
+    <h3>RECUPERAR CONTRASEÑA</h3>
     <form class="formulario" method="post">
+      <img src="/img/padlock.png" alt="">
       <div class="contenedor-div">
-        <label for="email" class="">USUARIO</label>
+        <label for="email" class="">Ingresa el Correo con el que te Registraste.</label>
         <div class="contenedor-email">
           <input type="email" class="" id="email" required>
         </div>
       </div>
       <div class="contenedor-div">
-        <label for="password" class="">CONTRASEÑA</label>
-        <div class="contenedor-password">
-          <input type="password" id="password" required >
-          <div class="figure-password">
-            <img id="password-eye" onclick="verContraseña()" src="/img/icons/eye-slash-regular.svg" alt="ver contraseña" height="15px">
-          </div>
-        </div>
-      </div>
-      <div class="contenedor-div">
         <a href="/html/Registrar_User.html" class="link-primary">Registrarse</a>
-        <a href="html/Olvide_Contrasenia.html" class="link-primary">Olvidé mi contraseña</a>
+        <a href="../index.html" class="link-primary">Volver al Inicio</a>
       </div>
-      <button type="submit" class="" onclick="location.href='' ">ENTRAR</button>
+      <button type="submit" class="" onclick="location.href='' ">Enviar</button>
     </form>
   </section>
 
