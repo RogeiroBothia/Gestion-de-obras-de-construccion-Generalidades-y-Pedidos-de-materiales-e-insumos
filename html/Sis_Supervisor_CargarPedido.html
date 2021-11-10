@@ -150,13 +150,7 @@
                             </tr>
                         </thead>
                         <tbody id="tbody">
-                            <tr id="table-fila">
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
                         </tbody>
-
                     </table>
                 </div>
             </div>
@@ -183,6 +177,7 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $('#table-insumos').DataTable();
+            document.getElementById("table-insumos_length").hidden=true;
         });
     </script>
     <!-- JS Tabla -->

@@ -3,13 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <title alt="Sistema Supervisor Lista">Sistema Supervisor Lista</title>
+    <title alt="Sistema Administrador Actualizar Area">Actualizar Area</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/Style_Sis_Supervisor_Lis.css">
+    <link rel="stylesheet" href="/css/Style_Sis_Administrador_Are.css">
 
     <!-- CSS Tabla -->
     <link rel="stylesheet" href="/css/bootstrap.table.css">
     <!-- CSS Tabla -->
+
 </head>
 
 <body id="body">
@@ -24,7 +25,7 @@
             </span>
             <div class="col-1"></div>
             <span class="nav-span2 col-7">
-                <a href="Sis_Supervisor_Prin.html" class="home">
+                <a href="Sis_Administrador_Prin.html" class="home">
                     <img src="/img/icons/home.svg" alt="home" height="35px">
                 </a>
                 <div class="dropdown">
@@ -60,7 +61,7 @@
             </div>
             <div id="menu_info">
                 <h4 class="menu-text-user" value="USUARIO"></h4>
-                <h5 class="menu-cargo" value="SUPERVISOR"></h5>
+                <h5 class="menu-cargo" value="ADMINISTRADOR"></h5>
                 <h6 class="menu-text-email"><a class="menu-text-email-a" value="user@gmail.com"
                         href="mailto:user@gmail.com"></a></h6>
             </div>
@@ -68,27 +69,28 @@
             <ul class="list-unstyled components menu-ul">
                 <li class="menu-li">
                     <img src="/img/icons/home-menu.svg" alt="home" height="30px" title="INICIO">
-                    <a href="Sis_Supervisor_Prin.html" class="d-block menu-a" id="menu-a" aria-hidden="true"
+                    <a href="Sis_Administrador_Prin.html" class="d-block menu-a" id="menu-a" aria-hidden="true"
                         value="INICIO"></a>
                 </li>
                 <li class="menu-li">
-                    <img src="/img/icons/subir.svg" alt="home" height="30px" title="CARGAR PEDIDO">
-                    <a href="Sis_Supervisor_CargarPedido.html" class="d-block menu-a" id="menu-a" aria-hidden="true"
-                        value="CARGAR PEDIDO"></a>
+                    <img src="/img/icons/area-administrar.svg" alt="home" height="30px" title="ADMINISTRAR ÁREAS">
+                    <a href="Sis_Administrador_Area.html" class="d-block menu-a" id="menu-a" aria-hidden="true"
+                        value="ADMINISTRAR ÁREAS"></a>
                 </li>
                 <li class="menu-li">
-                    <img src="/img/icons/orden.svg" alt="home" height="35px" title="GESTIONAR PEDIDO">
-                    <a href="Sis_Supervisor_Lista.html" class="d-block menu-a" id="menu-a" aria-hidden="true"
-                        value="GESTIONAR PEDIDOS"></a>
+                    <img src="/img/icons/zone-admin.svg" alt="home" height="30px" title="ADMINISTRAR ZONAS">
+                    <a href="Sis_Administrador_Zona.html" class="d-block menu-a" id="menu-a" aria-hidden="true"
+                        value="ADMINISTRAR ZONAS"></a>
                 </li>
                 <li class="menu-li">
-                    <img src="/img/icons/consulta.svg" alt="home" height="30px" title="CONSULTAR PEDIDO">
-                    <a href="Sis_Supervisor_Pedido.html" class="d-block menu-a" id="menu-a" aria-hidden="true"
-                        value="CONSULTAR PEDIDOS"></a>
+                    <img src="/img/icons/add-user.svg" alt="home" height="30px" title="GESTIONAR REGISTROS DE USUARIO">
+                    <a href="Sis_Administrador_GesReg.html" class="d-block menu-a" id="menu-a" aria-hidden="true"
+                        value="GESTIONAR REGISTROS"></a>
                 </li>
                 <li class="menu-li">
-                    <img src="/img/icons/flecha-hacia-abajo.svg" alt="home" height="30px" title="DESCARGAR REPORTES">
-                    <a href="" class="d-block menu-a" id="menu-a" aria-hidden="true" value="DESCARGAR REPORTES"></a>
+                    <img src="/img/icons/gestion-user.svg" alt="home" height="30px" title="GESTIONAR USUARIOS">
+                    <a href="Sis_Administrador_GesUs.html" class="d-block menu-a" id="menu-a" aria-hidden="true"
+                        value="GESTIONAR USUARIOS"></a>
                 </li>
             </ul>
         </div>
@@ -96,48 +98,28 @@
 
     <main id="contenedor-principal" class="contenedor-principal">
         <section id="contenedor">
+            <div>
+                <h2 class="">ACTUALIZAR AREA</h2>
+                <hr>
+            </div>
             <div id="contenedor-div">
-                <h2 class="">LISTA DE PEDIDOS</h2>
-            <hr>
-            <table id="example" class="table table-striped" style="width: 100%;">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Fecha</th>
-                        <th>Estado</th>
-                        <th>Iva</th>
-                        <th>Total</th>
-                        <th>Opciones</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1015</td>
-                        <td>27/09/2021</td>
-                        <td>Pendiente</td>
-                        <td>6.00</td>
-                        <td>$320,800</td>
-                        <td><button type="button" class="btn btn-light" onclick="location.href='/html/Sis_Supervisor_Pedido.html'">Ver Pedido</button></td>
-                    </tr>
-                    <tr>
-                        <td>1012</td>
-                        <td>27/09/2021</td>
-                        <td>Admitido</td>
-                        <td>3.00</td>
-                        <td>$170,750</td>
-                        <td><button type="button" class="btn btn-light" onclick="location.href='/html/Sis_Supervisor_Pedido.html'">Ver Pedido</button></td>
-                    </tr>
-                    <tr>
-                        <td>1013</td>
-                        <td>27/09/2021</td>
-                        <td>Enviado</td>
-                        <td>9.00</td>
-                        <td>$86,000</td>
-                        <td><button type="button" class="btn btn-light" onclick="location.href='/html/Sis_Supervisor_Pedido.html'">Ver Pedido</button></td>
-                    </tr>
-                </tbody>
 
-                </table>
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputNombre" class="form-label">Nombre</label>
+                        <input type="nombre" class="form-control" id="exampleInputNombre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputDescripcion" class="form-label">Descripcion</label>
+                        <input type="descripcion" class="form-control" id="exampleInputDescripcion">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputUbicacion" class="form-label">Ubicacion</label>
+                        <input type="ubicacion" class="form-control" id="exampleInputUbicacion">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Actualizar</button>
+                </form>
+
             </div>
         </section>
     </main>
@@ -160,7 +142,7 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $('#example').DataTable();
-            document.getElementById("example_length").hidden=true;
+            document.getElementById("example_length").hidden = true;
         });
     </script>
     <!-- JS Tabla -->

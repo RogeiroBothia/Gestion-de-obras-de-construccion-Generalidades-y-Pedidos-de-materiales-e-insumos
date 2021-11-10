@@ -142,4 +142,3 @@ if (window.innerWidth < 600) {
     const footer = document.getElementById("footer");
     footer.classList.add("footer_600");
 }
-

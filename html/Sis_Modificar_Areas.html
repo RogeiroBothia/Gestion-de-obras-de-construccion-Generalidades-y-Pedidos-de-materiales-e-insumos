@@ -109,6 +109,7 @@
                             <th>Nombre</th>
                             <th>Descripcion</th>
                             <th>Ubicacion</th>
+                            <th>Opciones</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -116,18 +117,60 @@
                             <td>Coliseo</td>
                             <td>**************</td>
                             <td>UFPS</td>
+                            <td>
+                                <div class="dropdown">
+                                    <button id="dropdown-button" class="btn btn-secondary dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Opciones
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                                        <li><a class="dropdown-item" href="Sis_Modificar_Areas_Mod.html">Actualizar</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Eliminar</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
 
                         </tr>
                         <tr>
                             <td>Coliseo</td>
                             <td>**************</td>
                             <td>UFPS</td>
+                            <td>
+                                <div class="dropdown">
+                                    <button id="dropdown-button" class="btn btn-secondary dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Opciones
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                                        <li><a class="dropdown-item" href="Sis_Modificar_Areas_Mod.html">Actualizar</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Eliminar</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
 
                         </tr>
                         <tr>
                             <td>Coliseo</td>
                             <td>**************</td>
                             <td>UFPS</td>
+                            <td>
+                                <div class="dropdown">
+                                    <button id="dropdown-button" class="btn btn-secondary dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Opciones
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                                        <li><a class="dropdown-item" href="Sis_Modificar_Areas_Mod.html">Actualizar</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Eliminar</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
 
                         </tr>
                     </tbody>
@@ -155,6 +198,7 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $('#example').DataTable();
+            document.getElementById("example_length").hidden=true;
         });
     </script>
     <!-- JS Tabla -->
