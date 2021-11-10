@@ -333,25 +333,40 @@ hr{
 #contenedor-div{
     width: 80%;
     padding: 0;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
-#contenedor-div table{
+#contenedor-div #tabla-interventor{
+    border: 2px solid black;
+    border-radius: 5px !important;
+    width: 20%;
+    height: 10px;
+}
+
+#contenedor-div #tabla-pedido{
+    border: 2px solid black;
+    border-radius: 5px !important;
+}
+
+#contenedor-div #tabla-insumo{
     border: 2px solid black;
     border-radius: 5px;
+    width: 100%;
 }
 
 #contenedor-div table th{
     text-align: center;
+    font-size: small;
 }
 #contenedor-div table td{
     text-align: center;
+    font-size: small;
 }
 
 #contenedor-div h2{
     font-weight: bold;
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 #user_img{

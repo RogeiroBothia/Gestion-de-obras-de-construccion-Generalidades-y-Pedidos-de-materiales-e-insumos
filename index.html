@@ -14,15 +14,18 @@
     <h3>LOGIN</h3>
     <form class="formulario" method="post">
       <div class="contenedor-div">
-        <label for="inputEmail3" class="">USUARIO</label>
-        <div class="">
-          <input type="email" class="" id="inputEmail3" required>
+        <label for="email" class="">USUARIO</label>
+        <div class="contenedor-email">
+          <input type="email" class="" id="email" required>
         </div>
       </div>
       <div class="contenedor-div">
-        <label for="inputPassword3" class="">CONTRASEÑA</label>
-        <div class="">
-          <input type="password" class="" id="inputPassword3" required>
+        <label for="password" class="">CONTRASEÑA</label>
+        <div class="contenedor-password">
+          <input type="password" id="password" required >
+          <div class="figure-password">
+            <img id="password-eye" onclick="verContraseña()" src="/img/icons/eye-slash-regular.svg" alt="ver contraseña" height="15px">
+          </div>
         </div>
       </div>
       <div class="contenedor-div">

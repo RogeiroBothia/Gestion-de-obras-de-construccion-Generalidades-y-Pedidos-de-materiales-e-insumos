@@ -1,3 +1,47 @@
+function selectDisable() {
+    let select = document.getElementById("select-tipo");
+    select.setAttribute("disabled", "disabled");
+}
+
+function more() {
+    let cant = document.getElementById("cantidad-insumo");
+    cant.value++;
+}
+
+function less() {
+    let cant = document.getElementById("cantidad-insumo");
+    if (cant.value - 1 > -1) {
+        cant.value--;
+    } else {
+        alert("La cantidad no puede ser negativa.");
+    }
+}
+
+function agregarPedido() {
+    let inputs = document.querySelectorAll(".input");
+    let insumo = inputs[1].value;
+    let cant = inputs[2].value;
+    let precio = inputs[3].value;
+    let tabla = document.getElementById("table-insumos");
+    let cadena = "<td>"+insumo+"</td><td>"+cant+"</td><td>"+precio+"</td>"
+    tabla.insertRow(-1).innerHTML = cadena;
+
+    $(document).ready(function () {
+        $('#table-insumos').DataTable();
+    });
+}
+
+function eliminarTodo() {
+    let select = document.getElementById("select-tipo");
+    select.removeAttribute("disabled");
+    select.removeAttribute("selected");
+    let inputs = document.querySelectorAll(".input");
+    for (let index = 0; index < inputs.length; index++) {
+        inputs[index].value = "";
+
+    }
+}
+
 let cargo = document.querySelector(".menu-cargo").getAttribute("value");
 let li_roles = document.getElementById("sub-dropdown-menu").childNodes;
 switch (cargo) {
@@ -67,7 +111,7 @@ function menu() {
                     menu_info.innerHTML = '<h4 class="menu-text-user my-2">USUARIO</h4><h5 class="menu-cargo my-2">SUPERVISOR</h5><h6 class="menu-text-email my-2"><a href="mailto:user@gmail.com">user@gmail.com</a></h6>';
                 } else { menu_info.innerHTML = "" }
                 break;
-            case "INTERVERTOR":
+            case "INTERVENTOR":
                 if (menu_info.innerHTML === "") {
                     menu_info.innerHTML = '<h4 class="menu-text-user my-2">USUARIO</h4><h5 class="menu-cargo my-2">INTERVENTOR</h5><h6 class="menu-text-email my-2"><a href="mailto:user@gmail.com">user@gmail.com</a></h6>';
                 } else { menu_info.innerHTML = "" }

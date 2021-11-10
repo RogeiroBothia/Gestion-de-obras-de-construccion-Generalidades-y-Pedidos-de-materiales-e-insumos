@@ -94,62 +94,71 @@
             </ul>
         </div>
     </aside>
-    
+
     <main id="contenedor-principal" class="contenedor-principal">
 
         <section id="contenedor">
-            <div id="contenedor-form">
-                <form class="p-4">
-                    <div class="mb-3">
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>CATEGORIA</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                      <label for="exampleDropdownFormEmail2" class="form-label">Email address</label>
-                      <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
-                    </div>
-                    <div class="mb-3">
-                      <label for="exampleDropdownFormPassword2" class="form-label">Password</label>
-                      <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Sign in</button>
-                  </form>
-            </div>
-            <div id="contenedor-div">
+            <div>
                 <h2 class="">CARGAR PEDIDO</h2>
                 <hr>
-                <table id="example" class="table table-striped" style="width: 100%;">
-                    <thead>
-                        <tr>
-                            <th>Nombre Insumo</th>
-                            <th>Cantidad</th>
-                            <th>Precio Unitario</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1015</td>
-                            <td>6</td>
-                            <td>$320,800</td>
+            </div>
+            <div class="contenedor-info">
+                <div id="contenedor-form">
+                    <form class="form-pedido mb-2">
+                        <div class="mb-1">
+                            <select id="select-tipo" class="form-select" onchange="selectDisable()" required>
+                                <option selected hidden>TIPO</option>
+                                <option value="1">REGULAR</option>
+                                <option value="2">MAQUINARIA EXPRESS</option>
+                                <option value="3">KIT MENSUAL</option>
+                                <option value="4">KIT TRIMESTRAL</option>
+                                <option value="5">PEDIDOS ADICIONALES - 1</option>
+                                <option value="6">PEDIDOS ADICIONALES - 2</option>
+                            </select>
+                        </div>
+                        <div class="">
+                            <input type="text" class="form-control input" id="nombre-pedido" placeholder="NOMBRE DEL PEDIDO" required>
+                        </div>
+                    </form>
+                    <form class="form-insumos">
+                        <div class="mb-2">
+                            <input type="text" class="form-control input" id="descripcion-insumo" placeholder="DESCRIPCIÓN" required>
+                        </div>
+                        <div class="input-group mb-2">
+                            <input id="cantidad-insumo" type="number" class="form-control input" placeholder="CANTIDAD" required>
+                            <button class="btn btn-outline-secondary" type="button" onclick="more()"><img src="/img/icons/plus-solid.svg" alt="más" height="15px"></button>
+                            <button class="btn btn-outline-secondary" type="button" onclick="less()"><img src="/img/icons/minus-solid.svg" alt="menos" height="15px"></button>
+                        </div>
+                        <div class="input-group mb-2">
+                            <span class="input-group-text">$</span>
+                            <input type="number" class="form-control input" placeholder="PRECIO UNITARIO">
+                            <span class="input-group-text">.00</span>
+                        </div>
+                        <div class="contenedor-buttons">
+                            <button type="button" class=" btn-primary p-1" onclick="agregarPedido()">AGREGAR</button>
+                            <button type="button" class=" btn-primary p-1" onclick="eliminarTodo()">ELIMINAR</button>
+                        </div>
+                    </form>
+                </div>
+                <div id="contenedor-div">
+                    <table id="table-insumos" class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Insumo</th>
+                                <th>Cantidad</th>
+                                <th>Precio Unitario</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+                            <tr id="table-fila">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
 
-                        </tr>
-                        <tr>
-                            <td>1012</td>
-                            <td>3.00</td>
-                            <td>$170,750</td>
-                        </tr>
-                        <tr>
-                            <td>1013</td>
-                            <td>9.00</td>
-                            <td>$86,000</td>
-                        </tr>
-                    </tbody>
-
-                </table>
+                    </table>
+                </div>
             </div>
         </section>
 
@@ -165,14 +174,15 @@
     <script type="text/javascript" src="/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/js/bootstrap.bundle.js"></script>
     <script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="/js/menu.js"></script>
+    
 
     <!-- JS Tabla -->
     <script type="text/javascript" src="/js/jquery.datatable.js"></script>
     <script type="text/javascript" src="/js/bootstrap.table.js"></script>
+    <script type="text/javascript" src="/js/menu.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            $('#example').DataTable();
+            $('#table-insumos').DataTable();
         });
     </script>
     <!-- JS Tabla -->

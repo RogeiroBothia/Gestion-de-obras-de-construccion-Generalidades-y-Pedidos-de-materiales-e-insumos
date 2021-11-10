@@ -64,6 +64,7 @@ body{
     align-items: center;
     margin-top: 1vh;
     margin-bottom: 1vh;
+    position: relative;
 }
 
 .contenedor-principal .formulario .contenedor-div label{
@@ -76,7 +77,42 @@ body{
 .contenedor-principal .formulario .contenedor-div input{ 
     border: 3px solid black;
     border-radius: 5px;
-    width: 20vw;
+    width: 100%;
+}
+
+.contenedor-principal .formulario .contenedor-div .contenedor-email{
+    width: 100%;
+}
+
+.contenedor-principal .formulario .contenedor-div .contenedor-password{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.contenedor-principal .formulario .contenedor-div #password{
+    border-right: none;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    width: 80% !important;
+}
+
+.contenedor-principal .formulario .contenedor-div .figure-password{
+    background-color: white;
+    border: 3px solid black;
+    border-left: none;
+    border-radius: 5px;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    width: 20% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+.contenedor-principal .formulario .contenedor-div #password-eye{
 }
 
 .contenedor-principal .formulario div a{
@@ -96,14 +132,15 @@ body{
     }
     .formulario label{
         font-size: medium !important;
-        width: 30vw !important;
         margin-bottom: 10px !important;
     }
+
     .formulario .contenedor-div{
         width: 30vw !important;
         margin-top: 5px !important;
         margin-bottom: 5px !important;
     }
+
     .formulario a{
         font-size: medium;
     }
@@ -123,27 +160,6 @@ body{
 
     .formulario{
         width: 40vw !important;
-        margin-top: 5vh !important;
-    }
-    .formulario label{
-        font-size: medium !important;
-        width: 30vw !important;
-        margin-bottom: 10px !important;
-    }
-    .formulario .contenedor-div{
-        width: 30vw !important;
-        margin-top: 5px !important;
-        margin-bottom: 5px !important;
-    }
-    .formulario a{
-        font-size: medium;
-    }
-
-    .formulario button{
-        height: 30px;
-        font-size: small;
-        margin-top: 10px !important;
-        margin-bottom: 10px !important;
     }
 }
 
@@ -165,6 +181,7 @@ body{
         margin-top: 5px !important;
         margin-bottom: 5px !important;
     }
+
     .formulario a{
         font-size: small;
     }

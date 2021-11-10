@@ -11,6 +11,18 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -303,12 +315,21 @@ hr{
 .contenedor-principal{
     width: 80%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 69px;
     margin-left: 20%;
     min-height: calc(100vh - 128px);
 }
+
+.contenedor-principal h2{
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 50px;
+    text-align: start;
+}
+
 
 .contenedor-principal-active {
     width: 90% !important;
@@ -319,19 +340,60 @@ hr{
     padding: 0;
     margin: 0;
     width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 #contenedor-form{
-    width: 40%;
+    width: 30%;
+    margin-right: 5%;
+}
+
+#contenedor-form .form-pedido{
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+#contenedor-form .form-pedido select{
+    font-size: small;
+}
+
+#contenedor-form .form-pedido input{
+    font-size: small;
+}
+
+#contenedor-form .form-insumos{
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+#contenedor-form .form-insumos input{
+    font-size: small;
+}
+
+#contenedor-form .form-insumos .contenedor-buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#contenedor-form .form-insumos .contenedor-buttons button{
+    font-size: small !important;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-weight: 400;
 }
 
 #contenedor-div{
-    width: 60%;
+    width: 65%;
     padding: 0;
     margin-top: 20px;
+}
+
+.contenedor-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #contenedor-div table{
@@ -344,12 +406,6 @@ hr{
 }
 #contenedor-div table td{
     text-align: center;
-}
-
-#contenedor-div h2{
-    font-weight: bold;
-    margin: 0;
-    margin-bottom: 50px;
 }
 
 #user_img{
@@ -427,6 +483,11 @@ footer .titulo-final{
 }
 
 @media (max-width:730px) {
+    #contenedor-form .form-insumos .contenedor-buttons{
+        display: grid !important;
+        gap: 5px;
+    }
+
     .texto-nav:before {
         content: attr(data-tablettext);
         font-size: 1rem;
