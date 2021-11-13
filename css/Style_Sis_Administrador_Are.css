@@ -333,6 +333,31 @@ hr{
     justify-content: center;
 }
 
+#contenedor-div1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+}
+
+#form1{
+    margin-left: 5%;
+    margin-right: 40%;
+}
+
+#form1 form{
+    width: 100%;
+}
+
+#form2 form{
+    width: 100%;
+}
+
+#contenedor-div #div-boton {
+    width: 50%;
+    justify-content: right;
+}
+
 #contenedor-div table{
     border: 2px solid black;
     border-radius: 5px;
