@@ -416,14 +416,6 @@ footer .titulo-final{
     font-weight: 500;
 }
 
-.contenedor-principal #boton-consul{
-    text-align: center;
-}
-
-.contenedor-principal #div-central button{
-   margin-left: 2.5%;
-}
-
 
 /*Clases para usar en JavaScript*/
 

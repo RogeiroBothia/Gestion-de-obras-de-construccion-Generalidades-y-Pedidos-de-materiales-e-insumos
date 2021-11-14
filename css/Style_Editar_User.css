@@ -104,16 +104,6 @@ body{
     padding: 0;
 }
 
-.contenedor-principal .formulario .contenedor-checks{
-    width: 22vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.contenedor-principal .formulario .contenedor-checks div label{
-}
-
 .contenedor-principal .formulario .contenedor-text{
     width: 22vw;
     height: 20px;
@@ -121,20 +111,15 @@ body{
     justify-content: space-between;
 }
 
-.contenedor-principal .formulario .contenedor-checks div{
-    margin-left: 2px;
-}
-
 .contenedor-principal .formulario .contenedor-div label{
     width: 22vw;
-    font-size: medium;
     text-align: center;
     margin-bottom: 5px;
 }
 
 .contenedor-principal .formulario .contenedor-div input{ 
     border: 3px solid black;
-    height: 25px;
+    height: 30px;
     border-radius: 5px;
     width: 22vw;
 }
@@ -142,7 +127,27 @@ body{
 .contenedor-principal .formulario div a{
     text-decoration-line: none;
     text-align: center;
+    font-size: medium;
 }
+
+.contenedor-principal .contenedor-botones{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+
+.contenedor-principal .contenedor-botones .registrarse-btn{
+    margin-right: 30px;
+}
+
+.contenedor-principal .contenedor-botones button{
+    padding: 5px 5px 5px 5px;
+}
+
+
+/*Responsive*/
+
+
 
 @media (max-width: 1000px){
     .contenedor-principal{

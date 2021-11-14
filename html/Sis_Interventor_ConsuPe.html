@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <title alt="Sistema Supervisor Lista">Sistema Interventor Lista</title>
+    <title alt="Sistema Interventor Consultar Pedido">Sistema Interventor Consultar Pedido</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/Style_Sis_Interventor_Ped.css">
-
+    
     <!-- CSS Tabla -->
     <link rel="stylesheet" href="/css/bootstrap.table.css">
     <!-- CSS Tabla -->
@@ -90,61 +90,34 @@
     </aside>
 
     <main id="contenedor-principal" class="contenedor-principal">
+
         <section id="contenedor">
             <div id="contenedor-div">
-                <h2 class="">LISTA DE PEDIDOS</h2>
-            <hr>
-            <table id="example" class="table table-striped" style="width: 100%;">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Fecha</th>
-                        <th>Realizado por Id</th>
-                        <th>Estado</th>
-                        <th>Iva</th>
-                        <th>Total</th>
-                        <th>Opciones</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1015</td>
-                        <td>27/09/2021</td>
-                        <th>3</th>
-                        <td>Pendiente</td>
-                        <td>6.00</td>
-                        <td>$320,800</td>
-                        <td><button type="button" class="btn btn-secondary" onclick="location.href='/html/Sis_Interventor_Pedido.html'">Ver Pedido</button></td>
-                    </tr>
-                    <tr>
-                        <td>1012</td>
-                        <td>27/09/2021</td>
-                        <th>1</th>
-                        <td>Admitido</td>
-                        <td>3.00</td>
-                        <td>$170,750</td>
-                        <td><button type="button" class="btn btn-secondary" onclick="location.href='/html/Sis_Interventor_Pedido.html'">Ver Pedido</button></td>
-                    </tr>
-                    <tr>
-                        <td>1013</td>
-                        <td>27/09/2021</td>
-                        <th>2</th>
-                        <td>Admitido</td>
-                        <td>9.00</td>
-                        <td>$86,000</td>
-                        <td><button type="button" class="btn btn-secondary" onclick="location.href='/html/Sis_Interventor_Pedido.html'">Ver Pedido</button></td>
-                    </tr>
-                </tbody>
-
-                </table>
+                    <h2 class="">CONSULTAR PEDIDO</h2>
+                    <hr>
+                    <div>
+                        <form>
+                            <div class="mb-3 p-3">
+                              <label for="exampleInputPassword1" class="form-label ">ID DEL PEDIDO:</label>
+                              <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            
+                            <div id="boton-consul" class="justify-content-center">
+                                <button type="button" class="btn btn-primary btn-lg" onclick="location.href='/html/Sis_Interventor_Pedido.html'" >Buscar</button>
+                            </div>
+                           
+                          </form>
+                    </div>
+                </div>
             </div>
+
         </section>
+
     </main>
 
     <footer id="footer">
         <h4 class="titulo-final ">&copy; SISTEMA DE PEDIDOS 2021</h4>
     </footer>
-
 
     <script type="text/javascript" src="/js/popper.min.js"></script>
     <script type="text/javascript" src="/js/jquery.js"></script>
@@ -152,17 +125,19 @@
     <script type="text/javascript" src="/js/bootstrap.bundle.js"></script>
     <script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="/js/menu.js"></script>
-
+    
     <!-- JS Tabla -->
+    <script type="text/javascript" src="/js/jquery.datatable.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.table.js"></script>
+    <!-- JS Tabla2 -->
     <script type="text/javascript" src="/js/jquery.datatable.js"></script>
     <script type="text/javascript" src="/js/bootstrap.table.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            $('#example').DataTable();
-            document.getElementById("example_length").hidden=true;
+            $('#tabla-insumo').DataTable();
+            document.getElementById("tabla-insumo_length").hidden=true;
         });
     </script>
-    <!-- JS Tabla -->
 </body>
 
 </html>

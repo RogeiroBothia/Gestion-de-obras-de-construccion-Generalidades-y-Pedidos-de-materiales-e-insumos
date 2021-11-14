@@ -25,7 +25,7 @@
                 </div>
             </div>
             <div class="contenedor-div">
-                <label for="email" class="">USUARIO</label>
+                <label for="email" class="">USUARIO(CORREO)</label>
                 <div class="">
                     <input type="email" class=" input" id="email" required>
                 </div>
@@ -48,25 +48,10 @@
             <div class="contenedor-file">
                 <input class="form-control input" type="file" accept="image/png, image/jpeg" id="formFile" required>
             </div>
-            <div class="contenedor-checks">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="1" id="check_admin">
-                    <label class="form-check-label" for="check_admin">ADMINISTRADOR</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="2" id="check_supervisor">
-                    <label class="form-check-label" for="check_supervisor">SUPERVISOR</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="3" id="check_interventor" >
-                    <label class="form-check-label" for="check_interventor">INTERVENTOR</label>
-                </div>
+            <div class="contenedor-botones">
+            <button type="button" class="registrarse-btn" onclick="registrarAction()">REGISTRARSE</button>
+            <button type="button" class="" onclick="registrarAction()">CANCELAR</button>
             </div>
-            <div class="contenedor-text">
-                <a href="/index.html" class="link-primary">Iniciar Sesión</a>
-                <a href="#" class="link-primary">Olvidé mi contraseña</a>
-            </div>
-            <button type="button" class="" onclick="registrarAction()">REGISTRARSE</button>
         </form>
     </section>
 
