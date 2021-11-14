@@ -340,6 +340,12 @@ hr{
     text-align: center;
 }
 
+.form-insumos{
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 10px;
+}
+
 #form1{
     margin-left: 5%;
     margin-right: 40%;

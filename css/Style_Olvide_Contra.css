@@ -38,6 +38,7 @@ body{
 .contenedor-principal h3{
     font-weight: bold;
     margin: 0;
+    text-align: center;
 }
 
 .contenedor-principal .formulario{
